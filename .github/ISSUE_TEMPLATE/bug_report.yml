@@ -1,0 +1,64 @@
+name: Bug report
+description: Something does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not paste API keys, passwords, environment files or real transcripts.**
+        Transcripts often contain personal data. Reduce the problem to a short made-up text.
+        Security problems: please report them privately, see SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `stt-to-script --version`
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Python and Gradio version, operating system
+      description: "`python --version`, `pip show gradio | grep Version`, OS"
+    validations:
+      required: true
+  - type: input
+    id: backend
+    attributes:
+      label: Language model API
+      description: Server or provider (e.g. vLLM, Ollama, a hosted service) and model name
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings that differ from the defaults
+      description: STT_TO_SCRIPT_* variables you set. Leave out API_KEY and AUTH.
+      render: shell
+  - type: input
+    id: deployment
+    attributes:
+      label: Deployment
+      description: Started by hand, as a service, behind a reverse proxy (which one, with ROOT_PATH)?
+  - type: textarea
+    id: input
+    attributes:
+      label: Input
+      description: File type, encoding if known, approximate length, transcript language, selected steps.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include the exact message shown in the interface, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log excerpt
+      description: >-
+        The lines of the job from the log at LOG_LEVEL=INFO. DEBUG logs can contain parts of
+        the input; check them before pasting.
+      render: text

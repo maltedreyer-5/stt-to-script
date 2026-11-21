@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2026 Malte Dreyer
+# SPDX-License-Identifier: MIT
+#
+# Example systemd unit. Assumes a system user "stt-to-script", an installation
+# in /opt/stt-to-script/venv and settings in /etc/stt-to-script/stt-to-script.env.
+
+[Unit]
+Description=STT to Script web interface
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=stt-to-script
+Group=stt-to-script
+EnvironmentFile=/etc/stt-to-script/stt-to-script.env
+ExecStartPre=/opt/stt-to-script/venv/bin/stt-to-script --check
+ExecStart=/opt/stt-to-script/venv/bin/stt-to-script
+Restart=on-failure
+RestartSec=5
+
+# Uploads and download copies live in a private /tmp that is removed on stop.
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

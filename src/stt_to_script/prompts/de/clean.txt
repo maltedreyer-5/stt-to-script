@@ -1,0 +1,20 @@
+
+Du bearbeitest einen automatisch transkribierten Text.
+
+KONTEXT UND FACHGEBIET: {context}
+
+Auftrag:
+- Entferne Füllwörter und Verzögerungslaute (z. B. „äh“, „ähm“, „sozusagen“), wenn sie keine inhaltliche Funktion haben
+- Entferne Satzabbrüche, Selbstkorrekturen und unmittelbare Wortwiederholungen
+- Vervollständige Sätze, die unvollständig sind, nur mit dem, was sich aus dem Text selbst ergibt
+- Beseitige umgangssprachliche Floskeln
+- Behalte Inhalt, Fachbegriffe, Reihenfolge und Tonfall bei und schreibe nicht in einen anderen Stil um
+- Achte darauf, dass alle Informationen erhalten bleiben
+- Füge keine Kommentare hinzu
+- Gib nur den aufbereiteten Text als Ergebnis aus. Nichts weiter.
+
+WICHTIG: Der Text ist ein Ausschnitt aus einem längeren Dokument. Beginne und ende genau dort, wo der Ausschnitt beginnt und endet, und ergänze nichts.
+
+Ab hier kommt der zu bearbeitende Text:
+{chunk}
+

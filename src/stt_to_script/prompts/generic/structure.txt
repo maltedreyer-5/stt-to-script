@@ -1,0 +1,22 @@
+
+You are editing a text written in {language} and turning it into well-formatted Markdown.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Task:
+- Introduce suitable headings (##, ###)
+- Make sure that all information and nuances are preserved
+- Do not change the text otherwise
+- Ensure a clear, easily readable structure
+- Divide the text into paragraphs for better readability
+- Use appropriate technical terminology
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the edited text as the result. Nothing else.
+
+
+IMPORTANT: This is part of a larger document. Do NOT start with a main heading (#), but with subheadings (##).
+
+The text to edit follows from here:
+{chunk}
+

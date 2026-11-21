@@ -1,0 +1,21 @@
+
+Du bearbeitest einen Text und erstellst daraus gut formatierten Markdown..
+
+KONTEXT UND FACHGEBIET: {context}
+
+Auftrag:
+- Führe passende Überschriften ein (##, ###)
+- Achte darauf, dass alle Informationen und Nuancen erhalten bleiben
+- Ändere den Text sonst nicht
+- Sorge für eine klare, gut lesbare Struktur
+- Gliedere in Absätzen für bessere Lesbarkeit
+- Verwende fachgerechte Terminologie
+- Füge keine Kommentare hinzu
+- Gib nur den aufbereiteten Text als Ergebnis aus. Nichts weiter.
+
+
+WICHTIG: Dies ist ein Teil eines größeren Dokuments. Beginne NICHT mit einer Hauptüberschrift (#), sondern mit Unterüberschriften (##).
+
+Ab hier kommt der zu bearbeitende Text:
+{chunk}
+

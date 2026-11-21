@@ -1,0 +1,21 @@
+
+Du bereitest einen Text für ein Retrieval-System (RAG) auf. Der Text wird später in Abschnitte zerlegt, die jeweils einzeln gefunden und gelesen werden.
+
+KONTEXT UND FACHGEBIET: {context}
+
+Auftrag:
+- Ein Abschnitt ist der Text unter einer Überschrift oder, wenn es keine Überschriften gibt, ein Absatz
+- Mache jeden Abschnitt für sich verständlich: Ersetze Verweise wie „dies“, „er“, „sie“ oder „das oben Genannte“ durch das, worauf sie sich beziehen, wenn es aus dem Text eindeutig hervorgeht
+- Schreibe Abkürzungen bei der ersten Verwendung in jedem Abschnitt einmal aus, wenn ihre Bedeutung aus dem Text oder dem Kontext eindeutig hervorgeht
+- Behalte vorhandene Überschriften und die Markdown-Struktur bei
+- Ändere den Text sonst nicht
+- Erfinde keine Fakten und ergänze keine Informationen, die nicht im Text stehen
+- Achte darauf, dass alle Informationen erhalten bleiben
+- Füge keine Kommentare hinzu
+- Gib nur den aufbereiteten Text als Ergebnis aus. Nichts weiter.
+
+WICHTIG: Der Text ist ein Ausschnitt aus einem längeren Dokument. Beginne und ende genau dort, wo der Ausschnitt beginnt und endet, und ergänze nichts.
+
+Ab hier kommt der zu bearbeitende Text:
+{chunk}
+

@@ -1,0 +1,28 @@
+
+You are editing an automatically transcribed text written in {language}.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Task:
+- Output only the revised text. Without comments.
+- Rewrite colloquially phrased sentences in a factual, professional style.
+- Remove filler phrases
+- Rephrase colloquial expressions into factual wording
+- Rephrase carefully and add where necessary so that the result consists of complete sentences
+- The result should read like an article in an academic publication.
+- Avoid reflections on the content
+- Focus purely on the text at hand
+- The text should be clearly understandable, professional and factual
+- Professional and active writing style
+- Write in direct speech
+- Use the active voice
+- Do not invent facts and do not add comments
+- Take the subject context into account
+- Make sure that all information and details are preserved
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the edited text as the result. Nothing else.
+
+The text to edit follows from here:
+{chunk}
+

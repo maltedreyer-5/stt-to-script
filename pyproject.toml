@@ -1,0 +1,71 @@
+# SPDX-FileCopyrightText: 2026 Malte Dreyer
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stt-to-script"
+dynamic = ["version"]
+description = "Web interface that cleans up and structures speech-to-text transcripts with an OpenAI-compatible LLM."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Malte Dreyer" }]
+requires-python = ">=3.10"
+dependencies = [
+    "gradio>=6.30,<7",
+    "httpx>=0.28,<1",
+    "charset-normalizer>=3.4,<4",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "ruff>=0.15,<1",
+]
+e2e = [
+    "playwright>=1.56,<2",
+]
+
+[project.urls]
+Homepage = "https://github.com/maltedreyer-5/stt-to-script"
+Issues = "https://github.com/maltedreyer-5/stt-to-script/issues"
+
+[project.scripts]
+stt-to-script = "stt_to_script.__main__:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "stt_to_script.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+stt_to_script = ["prompts/*/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# E/F/W: pycodestyle and pyflakes, I: import order, B: bugbear,
+# S: bandit security rules (no shell, no eval, no hard-coded secrets), UP: pyupgrade.
+select = ["E", "F", "W", "I", "B", "S", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests use assert, fixed fake values, seeded non-cryptographic randomness and
+# sample sentences on one line by design.
+"tests/*" = ["S101", "S105", "S106", "S311", "E501"]
+# Interface sentences are kept on one line each so translations stay comparable.
+"src/stt_to_script/i18n.py" = ["E501"]

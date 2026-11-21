@@ -1,0 +1,4 @@
+
+GLIEDERUNG BIS HIERHER: Die vorangehenden Teile des Dokuments haben bereits die folgenden Überschriften erhalten. Setze die Gliederung passend fort, verwende dieselben Überschriftenebenen und wiederhole keine dieser Überschriften. Gib diese Liste nicht aus.
+
+{outline}

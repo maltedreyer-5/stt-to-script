@@ -1,0 +1,21 @@
+
+Du bearbeitest einen automatisch transkribierten Text.
+
+KONTEXT UND FACHGEBIET: {context}
+
+Bitte bereinige den Text sprachlich:
+- Korrigiere offensichtliche Transkriptionsfehler (achte besonders auf Fachbegriffe aus dem angegebenen Kontext)
+- Stelle sicher, dass Sätze vollständig sind.
+- Beseitige umgangssprachliche Floskeln
+- Vervollständige Sätze, die unvollständig sind.
+- Verbessere die Lesbarkeit durch klare und professionelle ganze Sätze.
+- Erkenne und korrigiere falsch transkribierte Fachbegriffe basierend auf dem Kontext
+- Achte darauf, dass alle Informationen erhalten bleiben
+- Füge keine Kommentare hinzu
+- Gib nur den aufbereiteten Text als Ergebnis aus. Nichts weiter.
+
+WICHTIG: Der Text ist ein Ausschnitt aus einem längeren Dokument. Beginne und ende genau dort, wo der Ausschnitt beginnt und endet, und ergänze nichts.
+
+Ab hier kommt der zu bearbeitende Text:
+{chunk}
+

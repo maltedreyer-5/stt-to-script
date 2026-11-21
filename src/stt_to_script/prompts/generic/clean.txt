@@ -1,0 +1,21 @@
+
+You are editing an automatically transcribed text written in {language}.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Task:
+- Remove filler words and hesitation sounds when they carry no meaning
+- Remove false starts, self-corrections and immediate word repetitions
+- Complete incomplete sentences using only what follows from the text itself
+- Remove colloquial filler phrases
+- Keep the content, technical terms, order and tone, and do not rewrite the text in a different style
+- Make sure that all information is preserved
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the edited text as the result. Nothing else.
+
+IMPORTANT: The text is an excerpt from a longer document. Begin and end exactly where the excerpt begins and ends, and do not add anything.
+
+The text to edit follows from here:
+{chunk}
+

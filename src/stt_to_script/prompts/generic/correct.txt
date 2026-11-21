@@ -1,0 +1,21 @@
+
+You are editing an automatically transcribed text written in {language}.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Task:
+- Correct only obvious transcription errors (pay particular attention to technical terms from the given context)
+- Recognise and correct incorrectly transcribed technical terms based on the context
+- Correct spelling, capitalisation and punctuation
+- Do not rephrase, shorten or add anything
+- Keep the wording, sentence structure and order, even where they are colloquial
+- Make sure that all information is preserved
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the corrected text as the result. Nothing else.
+
+IMPORTANT: The text is an excerpt from a longer document. Begin and end exactly where the excerpt begins and ends, and do not add anything.
+
+The text to edit follows from here:
+{chunk}
+

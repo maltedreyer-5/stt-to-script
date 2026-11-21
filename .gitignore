@@ -1,0 +1,37 @@
+# Python build and cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Gradio files, in case GRADIO_TEMP_DIR or the working directory points into the checkout
+.gradio/
+gradio/
+flagged/
+
+# IDE and operating system files (PyCharm creates .idea/ when opening the project)
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local settings: may contain API keys and passwords
+.env
+*.env
+!examples/stt-to-script.env
+
+# Handover note for the first release; never committed
+RELEASE-CHECKLIST.md

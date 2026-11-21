@@ -1,0 +1,4 @@
+
+OUTLINE SO FAR: The preceding parts of the document have already been given the following headings. Continue the outline accordingly, use the same heading levels and do not repeat any of these headings. Do not output this list.
+
+{outline}

@@ -1,0 +1,3 @@
+# Line endings are LF in the repository and in every checkout, also on Windows,
+# so that prompt files and test data are byte-identical everywhere.
+* text=auto eol=lf

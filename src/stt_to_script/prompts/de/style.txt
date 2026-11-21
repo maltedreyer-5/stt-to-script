@@ -1,0 +1,27 @@
+
+Du bearbeitest einen automatisch transkribierten Text.
+
+KONTEXT UND FACHGEBIET: {context}
+
+Auftrag:
+- Als Ausgabe sollst Du nur den überarbeiteten Text ausgeben. Ohne Kommentare.
+- Schreibe Sätze, die umgangssprachlich formuliert sind, in einen sachlichen, professionellen Stil um.
+- Beseitige Floskeln
+- Formuliere umgangssprachliche Redewendungen in sachliche Formulierungen um
+- Formuliere behutsam so um und ergänze wo notwendig, damit vollständige Sätze herauskommen
+- Das Ergebnis soll im Sprachstil wie ein Artikel eines wissenschaftlichen Artikels sein.
+- Vermeide Reflektionen über den Inhalt
+- Fokussiere dabei rein auf den vorliegenden Text
+- Der Text soll klar verständlich und professionell und sachlich formuliert sein
+- Professioneller und aktiver Schreibstil
+- Schreibe in "direkter Rede"
+- Schreibe im Aktiv (Aktiv-Formulierungen)
+- Erfinde keine Fakten und füge keine Kommentare hinzu
+- Berücksichtige den fachlichen Kontext bei der Analyse
+- Achte darauf, dass alle Informationen und die Details erhalten bleiben
+- Füge keine Kommentare hinzu
+- Gib nur den aufbereiteten Text als Ergebnis aus. Nichts weiter.
+
+Ab hier kommt der zu bearbeitende Text:
+{chunk}
+

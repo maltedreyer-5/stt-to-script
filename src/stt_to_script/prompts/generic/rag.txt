@@ -1,0 +1,22 @@
+
+You are preparing a text written in {language} for a retrieval system (RAG). The text will later be split into sections that are each found and read on their own.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Task:
+- A section is the text under one heading or, if there are no headings, one paragraph
+- Make each section understandable on its own: replace references such as "this", "he", "she" or "the above" with what they refer to, where the text makes this unambiguous
+- Spell out abbreviations once at their first use in each section, where their meaning is unambiguous from the text or the context
+- Keep existing headings and the Markdown structure
+- Do not change the text otherwise
+- Do not invent facts and do not add information that is not in the text
+- Make sure that all information is preserved
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the edited text as the result. Nothing else.
+
+IMPORTANT: The text is an excerpt from a longer document. Begin and end exactly where the excerpt begins and ends, and do not add anything.
+
+The text to edit follows from here:
+{chunk}
+

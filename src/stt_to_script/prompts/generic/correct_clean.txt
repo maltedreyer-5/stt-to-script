@@ -1,0 +1,22 @@
+
+You are editing an automatically transcribed text written in {language}.
+
+CONTEXT AND SUBJECT AREA: {context}
+
+Please clean up the text linguistically:
+- Correct obvious transcription errors (pay particular attention to technical terms from the given context)
+- Make sure that sentences are complete.
+- Remove colloquial filler phrases
+- Complete sentences that are incomplete.
+- Improve readability through clear, professional, complete sentences.
+- Recognise and correct incorrectly transcribed technical terms based on the context
+- Make sure that all information is preserved
+- Do not add any comments
+- Write the result in {language}. Do not translate the text.
+- Output only the edited text as the result. Nothing else.
+
+IMPORTANT: The text is an excerpt from a longer document. Begin and end exactly where the excerpt begins and ends, and do not add anything.
+
+The text to edit follows from here:
+{chunk}
+
